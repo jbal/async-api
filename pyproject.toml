@@ -1,5 +1,5 @@
 [project]
-name = "async_api"
+name = "async_simple_api"
 version = "1.0.0"
 description = """
 Async Python API implemented in asyncio and aiohttp. The supported
