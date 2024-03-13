@@ -1,0 +1,44 @@
+[project]
+name = "async_api"
+version = "1.0.0"
+description = """
+Async Python API implemented in asyncio and aiohttp. The supported
+features include rate limits, concurrent limits, futures batching,
+and retry functionality.
+"""
+authors = [
+    { name = "Jake Ballantyne", email = "jake.david.ballantyne@gmail.com" }
+]
+maintainers = [
+    { name = "Jake Ballantyne", email = "jake.david.ballantyne@gmail.com" }
+]
+dependencies = [
+    "aiohttp>=3.8.3",
+    "certifi",
+    "build>=0.9.0",
+    "requests>=2.31.0",
+]
+keywords = []
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = []
+
+[project.license]
+file = "LICENSE.txt"
+
+[project.urls]
+Homepage = "https://github.com/jbal/async_api"
+Issues = "https://github.com/jbal/async_api/issues"
+Repository = "https://github.com/jbal/async_api"
+
+[build-system]
+requires = [
+    "setuptools>=61.0",
+    "wheel",
+]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["api/**/*"]
+namespaces = false
